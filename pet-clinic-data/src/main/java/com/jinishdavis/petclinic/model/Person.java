@@ -1,4 +1,4 @@
-package com.jinishdavis.jinishpetclinic.model;
+package com.jinishdavis.petclinic.model;
 
 public class Person {
 
