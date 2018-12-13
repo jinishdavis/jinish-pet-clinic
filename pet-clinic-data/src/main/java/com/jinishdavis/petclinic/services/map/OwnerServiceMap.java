@@ -1,11 +1,11 @@
 package com.jinishdavis.petclinic.services.map;
 
 import com.jinishdavis.petclinic.model.Owner;
-import com.jinishdavis.petclinic.services.CrudServices;
+import com.jinishdavis.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner ,Long> implements CrudServices<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner ,Long> implements OwnerService {
 
 
     @Override
@@ -33,5 +33,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner ,Long> implements 
     @Override
     public Owner save(Owner object) {
         return super.save(object.getId(),object);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }

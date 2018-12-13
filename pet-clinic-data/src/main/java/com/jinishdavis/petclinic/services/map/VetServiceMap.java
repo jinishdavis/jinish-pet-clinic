@@ -2,11 +2,11 @@ package com.jinishdavis.petclinic.services.map;
 
 
 import com.jinishdavis.petclinic.model.Vet;
-import com.jinishdavis.petclinic.services.CrudServices;
+import com.jinishdavis.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements CrudServices<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
 
 
     @Override
