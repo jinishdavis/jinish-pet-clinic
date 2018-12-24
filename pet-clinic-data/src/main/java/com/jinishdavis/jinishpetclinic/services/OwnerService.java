@@ -1,6 +1,8 @@
-package com.jinishdavis.petclinic.services;
+package com.jinishdavis.jinishpetclinic.services;
 
-import com.jinishdavis.petclinic.model.Owner;
+import com.jinishdavis.jinishpetclinic.model.Owner;
+
+
 
 public interface OwnerService extends CrudServices <Owner ,Long>{
 

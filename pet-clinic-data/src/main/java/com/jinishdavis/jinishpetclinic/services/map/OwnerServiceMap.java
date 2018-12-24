@@ -1,10 +1,12 @@
-package com.jinishdavis.petclinic.services.map;
+package com.jinishdavis.jinishpetclinic.services.map;
 
-import com.jinishdavis.petclinic.model.Owner;
-import com.jinishdavis.petclinic.services.OwnerService;
+import com.jinishdavis.jinishpetclinic.model.Owner;
+import com.jinishdavis.jinishpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner ,Long> implements OwnerService {
 
 

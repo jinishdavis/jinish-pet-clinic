@@ -1,10 +1,12 @@
-package com.jinishdavis.petclinic.services.map;
+package com.jinishdavis.jinishpetclinic.services.map;
 
-import com.jinishdavis.petclinic.model.Pet;
-import com.jinishdavis.petclinic.services.PetService;
+import com.jinishdavis.jinishpetclinic.model.Pet;
+import com.jinishdavis.jinishpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
 
     @Override

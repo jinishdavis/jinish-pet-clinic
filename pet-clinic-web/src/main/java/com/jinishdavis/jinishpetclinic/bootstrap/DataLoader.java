@@ -1,29 +1,31 @@
 package com.jinishdavis.jinishpetclinic.bootstrap;
 
-import com.jinishdavis.petclinic.model.Owner;
-import com.jinishdavis.petclinic.model.Vet;
-import com.jinishdavis.petclinic.services.OwnerService;
-import com.jinishdavis.petclinic.services.VetService;
-import com.jinishdavis.petclinic.services.map.OwnerServiceMap;
-import com.jinishdavis.petclinic.services.map.VetServiceMap;
+import com.jinishdavis.jinishpetclinic.model.Owner;
+import com.jinishdavis.jinishpetclinic.model.Vet;
+import com.jinishdavis.jinishpetclinic.services.OwnerService;
+import com.jinishdavis.jinishpetclinic.services.VetService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
+
+
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-    public DataLoader() {
-
-        ownerService =new OwnerServiceMap();
-        vetService =new VetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
 
     @Override
     public void run(String... args) throws Exception {
+
 
         Owner owner1 = new Owner();
         owner1.setId(1L);

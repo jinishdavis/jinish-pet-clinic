@@ -1,4 +1,4 @@
-package com.jinishdavis.petclinic.services;
+package com.jinishdavis.jinishpetclinic.services;
 
 import java.util.Set;
 
