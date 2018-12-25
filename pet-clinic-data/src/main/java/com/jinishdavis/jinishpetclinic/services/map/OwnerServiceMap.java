@@ -41,4 +41,6 @@ public class OwnerServiceMap extends AbstractMapService<Owner ,Long> implements 
     public Owner findByLastName(String lastName) {
         return null;
     }
+
+
 }
